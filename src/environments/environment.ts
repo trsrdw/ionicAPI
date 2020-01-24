@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  add_user: 'https://us-central1-trsrdw-ionic.cloudfunctions.net/app/api/add-user',
+  login: 'https://us-central1-trsrdw-ionic.cloudfunctions.net/app/api/login'
 };
 
 /*

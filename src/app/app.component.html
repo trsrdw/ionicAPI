@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay" mode="md">
+      <ion-header id="side-header">
+        <ion-toolbar mode="md">
+          <ion-title>FLIPPO</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content id="page-side">
+        <ion-list lines="none">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" lines="none">
+              <ion-icon mode="md" id="icon-side" slot="start" [name]="p.icon"></ion-icon>
+              <ion-label mode="md">
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

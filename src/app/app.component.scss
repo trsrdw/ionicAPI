@@ -1,0 +1,20 @@
+#page-side {
+    --background: var(--ion-color-dark);
+    ion-item {
+        --background: var(--ion-color-dark);
+        color: white;
+    }
+    ion-list {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+#side-header ion-toolbar {
+    --background: #000;
+    color: var(--ion-color-primary);
+}
+
+#icon-side {
+    fill: white;
+}

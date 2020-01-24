@@ -1,0 +1,63 @@
+<ion-header id="acc-header">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-menu-button mode="ios"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Account
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-icon id="acc-icon" name="create" mode="ios"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="page-acc">
+
+  <ion-card mode="md">
+    <div class="card">
+      <div class="header">
+        <h3>{{fname}} {{lname}}</h3>
+        <div class="avatar">
+          <img src="/assets/account.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <ion-item mode="md" lines="none">
+        <ion-label color="primary">First Name</ion-label>
+        <ion-text>{{fname}}</ion-text>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item mode="md" lines="none">
+        <ion-label color="primary">Last Name</ion-label>
+        <ion-text>{{lname}}</ion-text>
+      </ion-item>
+    </div>
+    
+    <div>
+      <ion-item mode="md" lines="none">
+        <ion-label color="primary">E-mail</ion-label>
+        <ion-text>{{email}}</ion-text>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item mode="md" lines="none">
+        <ion-label color="primary">Date of Birth</ion-label>
+        <ion-text>{{dob}}</ion-text>
+      </ion-item>
+    </div>
+  </ion-card>
+
+  <div id="acc-button-1">
+    <ion-button mode="md" size="medium" href="/home" shape="round">Change Password</ion-button>
+  </div>
+  <div id="acc-button-2">
+    <ion-button color="lightgray" mode="md" size="medium" shape="round" (click)="prosesLogout()">Logout</ion-button>
+  </div>
+
+</ion-content>

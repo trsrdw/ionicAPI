@@ -1,0 +1,83 @@
+#page-acc {
+    --background: var(--ion-color-tertiary);
+}
+
+#acc-header ion-toolbar {
+    --background: var(--ion-color-dark);
+    color: var(--ion-color-light);
+}
+
+#acc-icon {
+    fill: var(--ion-color-primary);
+    width: 34px;
+    height: 21px;
+}
+
+ion-card {
+    background: var(--ion-color-dark);
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    box-shadow: 4px 4px 20px 3px #111;
+}
+
+ion-item {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    color: white;
+    --background: var(--ion-color-dark);
+}
+
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    margin: 0 auto;
+
+    .header {
+        height: 160px;
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin: 0 auto;
+
+            img {
+                margin-top: 0;
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                bottom: calc(-1*(22px + 4px));
+                border: 4px solid var(--ion-color-secondary);
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+#acc-button-1 {
+    text-align: center;
+    
+}
+
+#acc-button-2 {
+    text-align: center;
+    margin-top: 4px;
+}
+
+ion-button {
+    width: 225px;
+    margin-top: 8px;
+    box-shadow: 4px 4px 20px 3px #111;
+    border-radius: 50px;
+}

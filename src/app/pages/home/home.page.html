@@ -1,0 +1,111 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">Welcome, {{name}}!</ion-title>
+    <ion-buttons>
+      <ion-button (click)="prosesLogout()">
+        <ion-icon slot="end" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar id="home-header" mode="ios">
+    <ion-buttons slot="start">
+      <ion-menu-button mode="ios"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Welcome, {{name}}!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="page-home">
+  <ion-card id="home-card" mode="ios">
+    <img src="/assets/header-card-1.jpg" alt=""/>
+    <ion-card-header>
+      <ion-card-subtitle mode="ios">Get Started</ion-card-subtitle>
+      <ion-card-title mode="ios">Welcome to Flippo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content mode="md">
+      <p>
+        Our task is to gather all the information needed to recommend
+        the right also best laptop for you. <a href="/home">More...</a>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid id="home-grid">
+    
+      <h2>Discover</h2>
+
+    <ion-row id="home-row-1" ion-align-items-start class="ion-justify-content-center">
+      <ion-col size-xs="3">
+        <div id="home-img">
+
+            <img src="/assets/brand-acer.svg">
+
+        </div>
+        <ion-text>Acer</ion-text>
+      </ion-col>
+
+      <ion-col size-xs="4">
+        <div id="home-img">
+
+          <img src="/assets/brand-apple.svg">
+
+      </div>
+      <ion-text>Mac Apple</ion-text>
+      </ion-col>
+
+      <ion-col size-xs="3">
+        <div id="home-img">
+
+          <img src="/assets/brand-lenovo.svg">
+
+      </div>
+      <ion-text>Lenovo</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row id="home-row-2" ion-align-items-start class="ion-justify-content-center">
+      <ion-col size-xs="3">
+        <div id="home-img">
+
+          <img src="/assets/brand-dell.svg">
+
+      </div>
+      <ion-text>Dell</ion-text>
+      </ion-col>
+      
+      <ion-col size-xs="4">
+        <div id="home-img">
+
+          <img src="/assets/brand-asus.svg">
+
+      </div>
+      <ion-text>Asus</ion-text>
+      </ion-col>
+
+      <ion-col size-xs="3">
+        <div id="home-img">
+
+          <img src="/assets/brand-vaio.svg">
+
+      </div>
+      <ion-text>Sony Vaio</ion-text>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid >
+
+  <div id="home-link">
+    <a href="/home">See all</a>
+  </div>
+
+</ion-content>

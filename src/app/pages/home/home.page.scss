@@ -1,0 +1,89 @@
+#page-home {
+    --background: var(--ion-color-tertiary);
+  }
+  
+  #home-header {
+    --background: var(--ion-color-dark);
+    color: white;
+  }
+  
+  #home-card img {
+    max-height: 35vh;
+    overflow: hidden
+  }
+  
+  ion-card#home-card {
+    --background: var(--ion-color-dark);
+    margin-left: 24px;
+    margin-right: 24px;
+    box-shadow: 4px 4px 20px 3px #111;
+  }
+  
+  #home-card {
+    ion-card-title, ion-card-subtitle, ion-card-content {
+      color: white;
+    }
+  }
+  
+  #home-list {
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    ion-list-header, ion-item {
+      --background: var(--ion-color-dark);
+      color: white;
+    }
+  }
+  
+  #home-grid {
+    p {
+      color: white;
+      
+    }
+    h2 {
+      margin-top: 0;
+      margin-left: 24px;
+      color: white;
+    }
+    div {
+      text-align: center;
+      //border: solid 1px white;
+      padding: 0px;
+      //background: var(--ion-color-lightgray);
+    }
+    ion-row {
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    ion-col {
+      margin: 6px;
+      text-align: center;
+    }
+    ion-text {
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  #home-img {
+    img {
+      padding-bottom: 16px;
+      margin: 0px;
+      width: 40px;
+      
+    }
+    
+  }
+  
+  #home-link {
+    margin-top: 10px;
+    margin-right: 40px;
+    text-align: right;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--ion-color-secondary);
+  }
